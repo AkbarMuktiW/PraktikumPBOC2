@@ -28,6 +28,7 @@ public class MTitik {
         //cek static
         System.out.println("\nJumlah objek titik : " + Titik.getCounterTitik());
 
+        //refleksi
         T1.refleksiX();
         System.out.print("\nSetelah refleksi sumbu X : ");
         T1.printTitik();
@@ -36,8 +37,24 @@ public class MTitik {
         System.out.println("Setelah refleksi sumbu Y : ");
         T1.printTitik();
 
+        //getrefleksi
+        T3.getRefleksiX();
+        T3.getRefleksiY();
+
+        System.out.print("Refleksi X dari T3 : ");
+        T3.printTitik();
+
+        System.out.print("Refleksi Y dari T3 : ");
+        T3.printTitik();
+
+        //kuadran
         System.out.println(("\nTitik T1 ada di kudran : "));
         T1.getKuadran();
 
+        //Jarak ke pusat (0,0)
+        System.out.println("Jarak T3 ke pusat : " + T3.getJarakPusat());
+
+        //Jarak antar dua titik
+        System.out.println("Jarak T1 ke T3 : " + T1.getJarak(T3));
     }
 }

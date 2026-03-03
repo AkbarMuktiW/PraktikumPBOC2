@@ -98,20 +98,18 @@ public class Titik {
     }
 
     double getJarak(Titik T2) {
-    return Math.sqrt(
+        return Math.sqrt(
         (absis - T2.absis)*(absis - T2.absis) +
         (ordinat - T2.ordinat)*(ordinat - T2.ordinat)
-    );
+        );
+    }
 
-    // Titik getRefleksiX() {
-    //     return new Titik(getAbsis(),-getOrdinat());
-    // }
+    Titik getRefleksiX() {
+        return new Titik(getAbsis(),-getOrdinat());
+    }
 
-    // Titik getRefleksiY() {
-    //     return new Titik(-getAbsis(),getOrdinat());
-    // }
+    Titik getRefleksiY() {
+        return new Titik(-getAbsis(),getOrdinat());
+    }
 }
-
-
-
-} //end class titik
+ //end class titik
