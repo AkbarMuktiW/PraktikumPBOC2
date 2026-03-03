@@ -1,3 +1,9 @@
+/* Nama File : Garis.Java
+ * Deskripsi : berisi attribut dan method dalam class Garis
+ * Pembuat : Akbar Mukti Wibowo 
+ * Tanggal : 3 Maret 2026
+ */
+
 public class Garis {
     Titik awal;
     Titik akhir;

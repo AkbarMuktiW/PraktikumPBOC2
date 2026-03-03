@@ -1,3 +1,9 @@
+/* Nama File : MGaris.Java
+ * Deskripsi : berisi main garis
+ * Pembuat : Akbar Mukti Wibowo 
+ * Tanggal : 3 Maret 2026
+ */
+
 public class MGaris {
     public static void main(String[] args) {
         Titik A = new Titik(-2, 0);
