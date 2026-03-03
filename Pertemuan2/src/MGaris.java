@@ -1,22 +1,25 @@
 public class MGaris {
     public static void main(String[] args) {
-        Titik T1 = new Titik(); //membuat objek titik T1 (0,0)
-        Titik T2 = new Titik();
-        T1.setAbsis (3); //mengubah absis T1 dengan nilai 3
-        T1.setOrdinat (4); //mengubah ordinat T1 dengan nilai 4
-        System.out.print("Titik T1 : ");
-        T1.printTitik () ; //mencetak koordinat T1 ke layar
-        T1.geser (3,4); //menggeser Tl sejauh (3,4)
-        System.out.print("\nTitik T1 setelah digeser : ");
-        T1.printTitik() ; //menampilkan koordinat T1 setelah digeser
-        
-        T2 = T1;
-        System.out.print("\nTitik T2 : ");
-        T2.printTitik();
+        Titik A = new Titik(-2, 0);
+        Titik B = new Titik(0, 4);
+        Garis G1 = new Garis(A, B);
+        G1.printGaris();
 
-        //cek overloading
-        Titik T3 = new Titik(2, 3);
-        System.out.print("\nTitik T3 : ");
-        T3.printTitik();
+        System.out.println("Panjang garis : " + G1.getPanjang());
+        System.out.println("Gradien : " + G1.getGradien());
+
+        Titik tengah = G1.getTitikTengah();
+        System.out.print("Titik Tengah : ");
+        tengah.printTitik();
+
+        System.out.println("Persamaan garis : " + G1.getPersamaan());
+
+        //garis kedua
+        Garis G2 = new Garis(new Titik(1, 1), new Titik(3, 5));
+
+        System.out.println("Sejajar? " + G1.isSejajar(G2));
+        System.out.println("Tegak Lurus? " + G1.isTegakLurus(G2));
+
+        System.out.println("\nJumlah objek garis : " + Garis.getCounterGaris());
     }
 }
