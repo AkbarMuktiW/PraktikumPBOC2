@@ -1,10 +1,20 @@
-public class Persegi extends BangunDatar {
+/* Nama File : Persegi.java
+ * Deskripsi : berisi attribut dan method dalam class Persegi
+ * Pembuat : Akbar Mukti Wibowo 
+ * Tanggal : 13 Maret 2026
+ */
+
+public class Persegi extends BangunDatar{
+    //===============ATRIBUT==============
     private double sisi;
 
+    //===============KONSTRUKTOR==============
+    // tanpa parameter 
     public Persegi() {
         setJmlSisi(4);
     }
 
+    // dengan parameter
     public Persegi(double sisi, String warna, String border) {
         super(4,warna,border);
         this.sisi = sisi;
@@ -14,6 +24,7 @@ public class Persegi extends BangunDatar {
         // setJmlSisi(4);
     }
 
+    //================GETTER SETTER===============
     public double getSisi() {
         return sisi;
     }
@@ -22,18 +33,23 @@ public class Persegi extends BangunDatar {
         this.sisi = sisi;
     }
 
+    // Mencetak luas dari persegi
     public double getLuas() {
         return sisi * sisi;
     }
 
+    // Mencetak keliling persegi
     public double getKeliling() {
         return 4 * sisi;
     }
 
+    // Mencetak diagonal persegi
     public double getDiagonal() {
         return sisi * Math.sqrt(2);
     }
 
+    //==================METHOD=============
+    // Mencetak informasi persegi
     @Override
     public void printInfo() {
         System.out.println("Jumlah Sisi : " + getJmlSisi());

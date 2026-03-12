@@ -1,7 +1,13 @@
+/* Nama File : BangunDatar.java
+ * Deskripsi : berisi main untuk menjaalankan class BangunDatar, Persegi, Lingkaran
+ * Pembuat : Akbar Mukti Wibowo 
+ * Tanggal : 13 Maret 2026
+ */
+
 public class MBangunDatar {
     public static void main(String[] args) {
         //======================BANGUN DATAR======================
-        System.out.println("====BANGUNDATAR====");
+        System.out.println("=============BANGUNDATAR=============");
         // konstruktor kosong
         BangunDatar bd1 = new BangunDatar();
         System.out.println("Bangun Datar 1");
@@ -23,8 +29,10 @@ public class MBangunDatar {
         System.out.println("Bangun Datar 2");
         bd2.printInfo();
 
+        System.out.println();
+        BangunDatar.printCounterBangunDatar();
         //=======================PERSEGI====================
-        System.out.println("\n=====PERSEGI=====");
+        System.out.println("\n============PERSEGI=============");
         // konstruktor kosong
         Persegi p1 = new Persegi();
         p1.setSisi(5);
@@ -50,7 +58,7 @@ public class MBangunDatar {
         System.out.println("Diagonal persegi : " + p2.getDiagonal());
 
         //===================LINGKARAN=========================
-        System.out.println("\n====LINGKARAN====");
+        System.out.println("\n=============LINGKARAN===============");
         // konstruktor kosong
         Lingkaran l1 = new Lingkaran();
         l1.setJari(6);

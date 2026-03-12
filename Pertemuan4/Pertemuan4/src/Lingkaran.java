@@ -1,10 +1,20 @@
+/* Nama File : Lingkaran.java
+ * Deskripsi : berisi attribut dan method dalam class Lingkaran
+ * Pembuat : Akbar Mukti Wibowo 
+ * Tanggal : 13 Maret 2026
+ */
+
 public class Lingkaran extends BangunDatar {
+    //===============ATRIBUT=================
     private double jari;
 
+    //============KONSTRUKTOR================
+    // tanpa parameter
     public Lingkaran() {
         setJmlSisi(1);
     }
 
+    // dengan parameter
     public Lingkaran(double diameter, String warna, String border) {
         this.jari = diameter / 2;
         setWarna(warna);
@@ -12,22 +22,27 @@ public class Lingkaran extends BangunDatar {
         setJmlSisi(1);
     }
 
+    //=============GETTER SETTER==============
     public double getJari() {
         return jari;
     }
 
+    // Menentukan nilai jari jari
     public void setJari(double jari) {
         this.jari = jari;
     }
 
+    // Mencetak luas lingkaran
     public double getLuas() {
         return Math.PI * jari * jari;
     }
 
+    // Mencetak keliling lingkaran
     public double getKeliling() {
         return 2 * Math.PI * jari;
     }
 
+    //===============METHOD===============
     // @Override
     // public void printInfo() {
     //     System.out.println("Jumlah Sisi : " + getJmlSisi());
@@ -36,7 +51,8 @@ public class Lingkaran extends BangunDatar {
     //     System.out.println("Jari : " + jari);
     // }
 
-    //super
+    //=====SUPER=====
+    // Mencetak informasi lingkaran
     public void printInfo() {
         super.printInfo();
         System.out.println("Jari jari lingkaran : " + jari);
